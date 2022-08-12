@@ -1,0 +1,106 @@
+.history {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 30px;
+}
+
+.header {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+
+.header img {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.order {
+    display: flex;
+}
+
+.detailtable {
+    height: calc(100vh - 150px);
+    padding-top: 20px;
+    overflow: scroll;
+
+}
+
+td {
+    width: 15%;
+    text-align: center;
+    word-break: break-all;
+    border-bottom: 3px solid #eeeeee;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+}
+th {
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+.status {
+    width: 80%;
+    height: 100%;
+    border: 1px solid white;
+    background-color: #c8ffbb;
+    border-radius: 10px;
+    padding: 20px 10px 20px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    color: #137401;
+    font-weight: 600;
+}
+.iconcopy {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+
+
+@media only screen and (max-width: 576px) {
+    .detailtable {
+        width: 100%;
+        border-top: 3px solid #eeeeee;
+        border-bottom: 3px solid #eeeeee;
+        padding-left: 2px;
+        padding-right: 2px;
+
+    }
+
+    td {
+        font-size: 12px;
+    }
+
+    .iconcopy {
+        margin-top: 30px;
+        margin-left: 5px;
+    }
+}
+
+@media only screen and (min-width: 577px) {
+    .detailtable {
+        width: 80%;
+        margin: auto;
+        border: 3px solid #eeeeee;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    td {
+        font-size: 16px;
+    }
+
+    .iconcopy {
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+}
